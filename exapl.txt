@@ -1,1 +1,2 @@
 print("%d",i);
+print("hello");
