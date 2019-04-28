@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Время</title>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="time"></div>
+</div>
+	<style>
+		#wrap {					
+			height: 600px;						
+		}
+		#time {
+			font-family: Arial, sans-serif;
+			color: #0c0;
+			background-color: #333;
+			width: 400px;
+			border: 8px double red;
+			font-size: 100px;				
+			margin: 300px auto;
+			text-align: center;				
+		}
+	</style>
+
+	<script>
+			
+		var time = document.getElementById("time");
+		var k = 0;
+		setInterval(() => {
+			time.innerHTML = formatData(new Date(),k++);			
+		},1000);
+
+		function formatData(time, n) {
+			var h = time.getHours();
+			if (h < 10)  h = "0" + h;
+			var m = time.getMinutes();
+			if (m < 10)  m = "0" + m;
+			var s = time.getSeconds();
+			if (s < 10)  s = "0" + s;
+			if (n%2 === 1)	return h + ":" + m + ":" + s;
+			else return h + " " + m + " " + s;
+		}
+
+	</script>
+</body>
+</html>
