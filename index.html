@@ -1,192 +1,28 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Программирование</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width">
-	
-	<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet">
-	
-	<link rel="shortcut icon" href="imgs/mycomputer.png" type="image/png">
-    
-	<link rel="stylesheet" href="styles/style.css" type="text/css">	
-	<link rel="stylesheet" href="styles/header.css">   
-  
+	<meta charset="UTF-8">
+	<title>uniMail</title>
 </head>
-
 <body>
 
-<div class="headerimg">					
-			<div class="headerimg-overlay"></div>		
-			<header class="header1">
-				<div class="misocial">
-					<svg id="compas" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" 
-						width="100px" height="100px" version="1.1" 
-						style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; 
-						image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-						viewBox="0 0 100 90"
-						 xmlns:xlink="http://www.w3.org/1999/xlink">
-						 <defs>
-						  <style type="text/css">
-						   <![CDATA[
-							.str0 {stroke:black;stroke-width:2.36222}
-							.fil1 {fill:blue}
-							.fil0 {fill:red}
-						   ]]>
-						  </style>
-						 </defs>
-						 <g id="Слой_x0020_1">
-						  <metadata id="CorelCorpID_0Corel-Layer"/>
-						  <polygon class="fil0 str0" points="49,11 54,28 58,46 49,46 41,46 45,28 "/>
-						  <polygon class="fil1 str0" points="49,83 45,65 41,48 49,48 58,48 54,65 "/>
-						 </g>
-					</svg>
-					<p>COMPASS</p>
-				</div>	
+	<form>
 
-				<div class="menu">							
-						<ul>
-							<li><a href="#" class="menu-link">Главная</a></li>
-							<li><a href="#" class="menu-link">Портфолио</a></li>
-							<li><a href="#" class="menu-link">Новости</a></li>
-							<li><a href="#" class="menu-link">Статьи</a></li>
-							<li><a href="#" class="menu-link">Контакты</a></li>						
-						</ul>					
-				</div>
-			</header>	
-			<div class="headerimg-text">
-				<span>THEORY & PRACTICE</span>
-				<h1>Programming</h1>
-				<p>The only education I believe in is self-education</p>
-			</div>
-			<a href="#" class="headerimg-arrow">
-				<div class="arrow-down">
-					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-						x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16">
-						<g><polygon fill="#444444" points="14.7,9.3 13.3,7.9 9,12.2 9,0 7,0 7,12.2 2.7,7.9 1.3,9.3 8,16 "/></g>
-					</svg>
-				</div>
-			</a>		
-</div>	
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="Мусоровоз">
+		<input type="hidden" name="admin_email" value="gabdulkhanov.lenar@mail.ru">
+		<input type="hidden" name="form_subject" value="Вывоз мусора">
+		<!-- END Hidden Required Fields -->
+
+		<input type="text" name="Name" placeholder="You name..." required><br>
+		<input type="text" name="E-mail" placeholder="You E-mail..." required><br>
+		<input type="text" name="Phone" placeholder="You phone..."><br>
+		<button>Send</button>
+
+	</form>
 	
-<header class="header2">
-    <input type="checkbox" id="menu-checkbox" />
-    <nav role="navigation">
-      <label for="menu-checkbox" class="toggle-button" data-open="Menu" data-close="Close" onclick></label>
-      <ul class="main-menu">
-        <li><a href="#" id="first">Главная</a></li>
-        <li><a href="#">Портфолио</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="#">Статьи</a></li>
-        <li><a href="#" id="last">Контакты</a></li>
-      </ul>
-    </nav>
-</header>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="script.js"></script>
 
-<br>
-
-<div class="sel_plan">		
-	<span>Программирование</span><br>
-	<h2>Выберите язык, на котором хотите посмотреть примеры программ</h2>
-</div>
-
-<div id="lang_pr">		
-	<div class="col4">Pascal<hr>
-		<img src = "imgs/pascal.png"/>
-		<p>Паскаль является учебным языком программирования. 
-		Его чаще всего начинают изучать в школе и он 
-		прекрасно подходит для понимании основ программирования</p>			
-	</div>
-	<div class="col4">C#<hr>
-		<img src = "imgs/csharp.png"/>
-		<p>C# - язык программирования для создании десктопных приложений. 
-		Также с использованием ASP.NET можно создать серверную часть сайта</p>	
-	</div>
-	<div class="col4 js">JavaScript<hr>
-		<img src = "imgs/javascript.png"/>
-		<p>JavaScript - язык, предназначенный для web-разработки. Также этот язык
-		считается самым востребованным. Ведь на нём помимо придания сайтам динамичноти,
-		есть возможность создания приложений как на клиентской стороне, так и на серверной</p>	
-	</div>			
-	<div class="col4">PHP<hr>
-		<img src = "imgs/php.png"/>
-		<p>PHP является серверным языком программирования. Поэтому применяется обычно с
-		системами управления базами данных, к примеру для обеспечения регистрации пользователя</p>	
-	</div>	
-</div>
-
-<div class="main">
-		<div class="gradient_upfooter">
-			<br><br><br><h1 style="text-align: center;">Contacts</h1>
-			<hr>
-			<div class="form">
-				<form name="form_reverse" method="post">
-					<input type="hidden" name="project_name" value="Программирование">
-					<input type="hidden" name="admin_email" value="gabdulkhanov.lenar@mail.ru">
-					<input type="hidden" name="form_subject" value="Техподдержка от сайта">				
-				
-					<div class="contact">
-						<div id="byname"><input type="text" name="name" required>
-						<p>Name <span class="red">*</span></p></div>
-						<div id="byaddress"><input type="text" name="email" required>
-						<p>Email address <span class="red">*</span></p></div>
-					</div>	
-					<div class="txt">								
-						<textarea id="msg" name="message" required></textarea><br>
-						<p>Message <span class="red">*</span></p>	
-					</div>
-					<div class="submit">
-						<input type="submit" value="Отправить">						
-					</div>
-				</form>
-			</div>
-		</div>			
-</div>	
-
-<footer>		
-	<div class="footer_wrap">			
-			<div class="col3">
-				<h3>Useful links</h3>
-				<ul class="menu_footer">
-					<li><a href="http://colorpicker.me">colorpicker</a></li>
-					<li><a href="https://cssgradient.io">gradient</a></li>
-					<li><a href="https://www.toptal.com/designers/subtlepatterns/">phone</a></li>						
-				</ul>
-			</div>
-			<div class="col3">
-				<h3>Fonts and icons</h3>
-				<ul class="menu_footer">
-					<li><a href="https://www.glyphicons.com">glyphicons</a></li>
-					<li><a href="https://www.iconfinder.com">iconfinder</a></li>						
-					<li><a href="http://fontawesome.ru">fontawesome</a></li>
-				</ul>
-			</div>
-			<div class="col3">
-				<h3>Languages</h3>
-				<ul class="menu_footer">
-					<li><a href="http://htmlbook.ru">htmlbook</a></li>
-					<li><a href="https://webref.ru">webref</a></li>
-					<li><a href="https://learn.javascript.ru">javascript</a></li>
-				</ul>
-			</div>	
-			<div class="copyright">				
-					<p>All rights reserved &nbsp;&copy;&nbsp;2019</p>				
-			</div>	<br>	
-	</div>			
-</footer>
-
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-
-<script>
-	$(function(){
-		$('.headerimg-arrow').on('click', function(e){
-		  $('html,body').stop().animate({ scrollTop: $('.sel_plan').offset().top }, 2000);
-		  e.preventDefault();
-		});		
-	});
-</script>
-<script src="scripts/script.js"></script>		
-	
 </body>
 </html>
