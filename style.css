@@ -1,0 +1,75 @@
+body {
+	background-color: #333;
+}
+.container {
+	width: 600px;
+	height: 670px;
+	background-color: #ddd;
+}
+
+.container_header{		
+	display: flex;	
+	padding: 20px;	
+}
+
+.new_game {
+	width: 150px;
+	height: 50px;
+	background-color: #ff0;
+	color: #000;
+	border: 1px solid black;
+	border-radius: 10px;
+	font: 20px sans-serif;
+	text-align: center;
+	line-height: 2.5;
+	cursor: pointer;
+}
+.new_game:hover {
+	background-color: #ee0;
+}
+
+.setting {
+	display: flex;	
+	flex-direction: column;	
+	padding: 20px;
+	
+}
+.level, .control {
+	margin-top: 30px;
+	font: 18px sans-serif;
+}
+
+.buttons  {
+	display: flex;
+	width: 150px;	
+	height: 200px;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+.btn {
+	margin: 10px;
+	width: 50px;
+	height: 50px;
+	outline: 1px solid black;
+	background-color: #bbb;
+	text-align: center;
+	font: 24px Arial sans-serif;
+	line-height: 1.8;
+	font-weight: 900;
+	cursor: pointer;
+}
+.btn:hover {
+	background-color: #aaa;
+}
+
+
+
+
+
+
+
+
+
+
+
+

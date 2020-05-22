@@ -1,49 +1,43 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Время</title>
+	<title>Tetris</title>
+	<meta charset="utf-8"/>	
+	<link rel="shortcut icon" href="logo.ico" type="image/x-icon"/>
+	<link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
-
-<div id="wrap">
-	<div id="time"></div>
-</div>
-	<style>
-		#wrap {					
-			height: 600px;						
-		}
-		#time {
-			font-family: Arial, sans-serif;
-			color: #0c0;
-			background-color: #333;
-			width: 400px;
-			border: 8px double red;
-			font-size: 100px;				
-			margin: 300px auto;
-			text-align: center;				
-		}
-	</style>
-
-	<script>
+	<div class="container">
+		<div class="container_header">
+			<canvas id="tetris">canvas не работает</canvas>	
 			
-		var time = document.getElementById("time");
-		var k = 0;
-		setInterval(() => {
-			time.innerHTML = formatData(new Date(),k++);			
-		},1000);
-
-		function formatData(time, n) {
-			var h = time.getHours();
-			if (h < 10)  h = "0" + h;
-			var m = time.getMinutes();
-			if (m < 10)  m = "0" + m;
-			var s = time.getSeconds();
-			if (s < 10)  s = "0" + s;
-			if (n%2 === 1)	return h + ":" + m + ":" + s;
-			else return h + " " + m + " " + s;
-		}
-
-	</script>
+			<div class="setting">
+				<div class="new_game" id="new_game">
+					Начать игру
+				</div>
+				<div class="level" id="level">
+					Очки: 0
+				</div>
+				<div class="control">
+					Управление: ←,↑,→,↓,<br> 
+					p - пауза
+				</div>
+				
+				<div class="buttons">
+					<div class="btn left" id="left">←</div>
+					<div class="btn right" id="right">→</div>
+					
+					<div class="btn up" id="up">↑</div>
+					<div class="btn down" id="down">↓</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/model.js"></script>	
+	
+	<script src="js/controller.js"></script>
+	<script src="js/view.js"></script>	
+	
 </body>
 </html>
