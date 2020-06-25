@@ -1,43 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Tetris</title>
-	<meta charset="utf-8"/>	
-	<link rel="shortcut icon" href="logo.ico" type="image/x-icon"/>
-	<link rel="stylesheet" href="style.css"/>
-</head>
-
-<body>
-	<div class="container">
-		<div class="container_header">
-			<canvas id="tetris">canvas не работает</canvas>	
-			
-			<div class="setting">
-				<div class="new_game" id="new_game">
-					Начать игру
-				</div>
-				<div class="level" id="level">
-					Очки: 0
-				</div>
-				<div class="control">
-					Управление: ←,↑,→,↓,<br> 
-					p - пауза
-				</div>
-				
-				<div class="buttons">
-					<div class="btn left" id="left">←</div>
-					<div class="btn right" id="right">→</div>
-					
-					<div class="btn up" id="up">↑</div>
-					<div class="btn down" id="down">↓</div>
-				</div>
-			</div>
+	<head>		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"
+			  name="viewport" content="width=device-width, initial-scale=1">
+		<title>3D Tetris</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="three.min.js"></script>
+		<script src="OrbitControls.js"></script>		
+	</head>
+	<body>					
+		<div id="openModal" class="modalDialog">				
+				<div class="innerModalDialog">			        
+			        <h2 class="controls">Управление</h2>
+			        <img src="img/modal_window.jpg" alt="control">
+					<div class="info">
+						<p class = "space">Пробел - сразу ставить фигуру</p>
+						<p class = "pause">p - пауза</p>
+						<p class = "start">Нажмите ок для начала игры</p>
+						<button id="ok" class="ok">OK</button>
+					</div>
+    			</div>
 		</div>
-	</div>
-	<script src="js/model.js"></script>	
-	
-	<script src="js/controller.js"></script>
-	<script src="js/view.js"></script>	
-	
-</body>
+		<script src="script.js"></script>		
+	</body>
 </html>
