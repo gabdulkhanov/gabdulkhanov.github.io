@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html>
-	<head>		
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"
-			  name="viewport" content="width=device-width, initial-scale=1">
-		<title>3D Tetris</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<script src="three.min.js"></script>
-		<script src="OrbitControls.js"></script>		
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Башкортостан - мой край родной</title>
 	</head>
-	<body>					
-		<div id="openModal" class="modalDialog">				
-				<div class="innerModalDialog">			        
-			        <h2 class="controls">Управление</h2>
-			        <img src="img/modal_window.jpg" alt="control">
-					<div class="info">
-						<p class = "space">Пробел - сразу ставить фигуру</p>
-						<p class = "pause">p - пауза</p>
-						<p class = "start">Нажмите ок для начала игры</p>
-						<button id="ok" class="ok">OK</button>
-					</div>
-    			</div>
-		</div>
-		<script src="script.js"></script>		
+	
+	<body onload="fun()">
+		<h4>Участник конкурса КРИТ-2022 Габдулханов Ленар</h4>
+		<h1>Башкортостан - мой край родной</h1>
+		
+		<div id="q"></div>
+		
+		<button id="prev" onclick="funcprev()">Предыдущий</button>
+		<button id="next" onclick="funcnext()">Следующий</button>
+		
+		<script src="script.js"></script>
 	</body>
-</html>
+</html> 
