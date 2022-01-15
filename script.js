@@ -2,12 +2,33 @@ var k, w, v;
 var q = document.getElementById("q");
 var next = document.getElementById("next");
 var prev = document.getElementById("prev");
+var box1 = document.getElementById("box1");
+var box2 = document.getElementById("box2");
+var box3 = document.getElementById("box3");
 
 function fun() {
 	k = 0;
 	w = 0;
 	v = 0;	
 	questions(k);
+	box2.style.display = "none";
+	box3.style.display = "none";
+}
+
+function main() {
+	box1.style.display = "block";
+	box2.style.display = "none";
+	box3.style.display = "none";
+}
+function tst() {
+	box1.style.display = "none";
+	box2.style.display = "block";
+	box3.style.display = "none";
+}
+function maps() {
+	box1.style.display = "none";
+	box2.style.display = "none";
+	box3.style.display = "block";
 }
 
 function questions(num) {
